@@ -7,13 +7,25 @@
   grid-template-areas:
     "Nav-Bar Nav-Bar Nav-Bar Nav-Bar Nav-Bar"
     ". Header Header Header ."
-    ". . . . ."
+    ". . Card-1-text . ."
     ". Card-1 Card-1 Card-1 ."
-    ". . . . ."
+    ". . Card-2-text . ."
     ". Card-2 Card-2 Card-2 ."
     ". Footer Footer Footer .";
 }
-  
+ 
+.Card-1-text{
+  grid-area: Card-1-text;
+  background-color: orange;
+}
+
+.Card-2-text{
+  grid-area: Card-2-text;
+  background-color: orange;
+}
+
+
+
 .Nav-Bar { 
   grid-area: Nav-Bar;
   background-color: green; 
@@ -22,6 +34,10 @@
 .Card-1 { 
     grid-area: Card-1;
     background-color: green; 
+    grid-auto-flow: row;
+    grid-template-areas:
+    ".,."
+    ".,."
     }
   
 .Card-2 { 
@@ -29,3 +45,32 @@
     grid-area: Card-2;
  }
  
+
+Nav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: baseline;
+  margin: 15px;
+  background-color: white;
+
+}
+
+Nav li{
+  margin-left: 80px;
+  font-size: 20px;
+}
+
+
+#button-sign-in{
+  margin-left: 20%;
+
+}
+
+#button-try-it-free{
+  margin-left: 2%;
+
+}
+
+#Works-Doubletap{
+  margin-left: 10%;
+}

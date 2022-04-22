@@ -1,0 +1,31 @@
+.container {  
+  display: grid;
+  grid-template-columns: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+  grid-template-rows: 0.3fr 1.6fr 0.8fr 1.3fr 0.8fr 1.3fr 0.9fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nav-Bar Nav-Bar Nav-Bar Nav-Bar Nav-Bar"
+    ". Header Header Header ."
+    ". . . . ."
+    ". Card-1 Card-1 Card-1 ."
+    ". . . . ."
+    ". Card-2 Card-2 Card-2 ."
+    ". Footer Footer Footer .";
+}
+  
+.Nav-Bar { 
+  grid-area: Nav-Bar;
+  background-color: green; 
+}
+  
+.Card-1 { 
+    grid-area: Card-1;
+    background-color: green; 
+    }
+  
+.Card-2 { 
+  background-color: green; 
+    grid-area: Card-2;
+ }
+ 

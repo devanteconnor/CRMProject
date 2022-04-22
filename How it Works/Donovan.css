@@ -8,41 +8,78 @@
     "Nav-Bar Nav-Bar Nav-Bar Nav-Bar Nav-Bar"
     ". Header Header Header ."
     ". . Card-1-text . ."
-    ". Card-1 Card-1 Card-1 ."
+    ". Card-1 Card-1-in-text Card-1-in-text ."
     ". . Card-2-text . ."
-    ". Card-2 Card-2 Card-2 ."
+    ". Card-2 Card-2-in-text Card-2-in-text ."
     ". Footer Footer Footer .";
 }
  
 .Card-1-text{
   grid-area: Card-1-text;
-  background-color: orange;
 }
 
 .Card-2-text{
   grid-area: Card-2-text;
-  background-color: orange;
+}
+
+.Card-1-in-text{
+  grid-area: Card-1-in-text;
+  padding-left: 10%;
+  background-color: #0314FE;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+}
+
+.Card-2-in-text{
+  grid-area: Card-2-in-text;
+  padding-left: 10%;
+  background-color: #0314FE;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
 }
 
 
+#Card-1-Useful-Info-P{
+  padding-left:5%;
+  padding-right: 30%;
+  color: white
+
+}
+
+#Card-2-Useful-Info-P{
+  padding-left:5%;
+  padding-right: 30%;
+  color: white
+
+}
 
 .Nav-Bar { 
   grid-area: Nav-Bar;
-  background-color: green; 
 }
   
 .Card-1 { 
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     grid-area: Card-1;
-    background-color: green; 
     grid-auto-flow: row;
     grid-template-areas:
     ".,."
     ".,."
+    
     }
   
 .Card-2 { 
-  background-color: green; 
     grid-area: Card-2;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
  }
  
 
@@ -63,14 +100,56 @@ Nav li{
 
 #button-sign-in{
   margin-left: 20%;
+  font-size: 20px;
 
 }
 
 #button-try-it-free{
   margin-left: 2%;
+  font-size: 20px;
 
 }
 
 #Works-Doubletap{
-  margin-left: 10%;
+  margin-left: 4%;
+  font-size: 30px;
+  color: blue;
+}
+
+#flex-container-card{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#button-sign-in{
+  cursor: pointer;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 5px;
+
+}
+
+#button-try-it-free{
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#works-li-text{
+  color: blue;
 }

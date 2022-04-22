@@ -51,4 +51,27 @@ background-color: rgb(198, 151, 245); }
   
   .Footer { grid-area: Footer;
 background-color: rgb(175, 194, 69); }
-  
+
+/* Header CSS */
+.navbar{
+    height:20vh;
+}
+#nav-logo{
+    max-width: 20px;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:47%
+}
+#but-si{
+    margin-right: 3vh;
+    color: #0314fe;
+    border-color: #0314FE
+}
+#but-free{
+    background-color: #0314fe;
+    border-color: #0314fe;
+}
+#

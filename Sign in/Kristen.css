@@ -1,9 +1,10 @@
 .container {  display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    grid-template-rows: 1fr .5fr;
-    gap: 5px 2px;
-    grid-auto-flow: row;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: column;
     grid-template-areas:
+      "sign-up input-form"
       "sign-up input-form"
       "sign-up social-links";
   }
@@ -11,47 +12,52 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-  
+
 #sign-up{
-    background-color:#0314FE;
-    color: white;
+    grid-area: sign-up;
     font-weight: bolder;
-    border-radius:  0px 0px 950px 30px;
+    color: white;
+    background-color: #0314FE;
+    border-radius: 0px 0px 900px 30px;
   }
+
+#fix-it{
+    margin-right: 12vw;
+    margin-top: 7vh;
+    text-align: center;
+}
 
 #rocket {
     width: 30vw;
-    margin-left: 80px;
-    margin-bottom: 80px;
-    margin-top: 40px;
+    margin-left: 7vw;
 }
 
 #input-form {
-   display: flex;
-   justify-content: center;
-   align-content: stretch;
+   grid-area: input-form;
    font-size: larger;
-    
+   text-align: center;
+   
 }
 
-.input-container{
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
+#input-form h1{
+    margin-right: 10vw;
+    margin-bottom: 8vh;
+    font-size: 42px;
+}
 
+#btn-sign-in{
+    margin-top: 2vh;
 }
 
 #in-user{
-    background-image: url("../CRMProject/CRM-SignIn/Images/Page-1.png");
+    background-image: url("../CRMProject/Images/CRM-SignIn/Page-1.png");
     background-repeat: no-repeat;
     background-position-x: left;
-    background-size: contain;
-
 }
 
 .input-field{
-    width: 20vw;
-    height: 3.5vh;
+    width: 28vw;
+    height: 3.8vh;
     padding: 10px;
     outline: none;
     border-radius: 50px;
@@ -68,6 +74,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0 5px rgb(180, 180, 180);
+    margin-bottom: 15px;
 }
 
 .btn:hover {
@@ -80,12 +87,13 @@ body {
     transform: translateY(1px);
 }
 
+
 #social-links{
+    grid-area: social-links;
     text-align: center;
     font-weight: bold;
     font-size: small;
-    position: relative;
-    bottom: 20vh;
+   
 }
 
 .fa-facebook {

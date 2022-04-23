@@ -1,0 +1,217 @@
+html, body{
+  height: 100%;
+  margin: 0px
+}
+
+
+
+.container {  
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr 1.4fr 1.4fr 0.8fr;
+  grid-template-rows: 0.3fr 1.3fr 0.6fr 1.3fr 0.6fr 1.3fr 0.9fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nav-Bar Nav-Bar Nav-Bar Nav-Bar Nav-Bar"
+    ". Header Header Header ."
+    ". Card-1-text Card-1-text Card-1-text ."
+    ". Card-1 Card-1-in-text Card-1-in-text ."
+    ". Card-2-text Card-2-text Card-2-text ."
+    ". Card-2 Card-2-in-text Card-2-in-text ."
+    ". Footer Footer Footer .";
+}
+ 
+.Card-1-text{
+  grid-area: Card-1-text;
+  border-top: 2px solid gray;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+
+}
+
+.Card-2-text{
+  grid-area: Card-2-text;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+}
+
+.Card-1-in-text{
+  grid-area: Card-1-in-text;
+  padding-left: 10%;
+  background-color: #0314FE;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  justify-content: left;
+}
+
+.Card-2-in-text{
+  grid-area: Card-2-in-text;
+  padding-left: 10%;
+  background-color: #0314FE;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  margin-bottom: 60px;
+
+}
+
+
+#Card-1-Useful-Info-Title{
+  padding-left: 15%;
+  padding-top: 10%
+}
+
+#Card-1-Useful-Info-P{
+  font-size: 25px;
+  padding-left:0%;
+  padding-right: 15%;
+  padding-top: 10%;
+  color: white
+
+}
+
+#Card-2-Useful-Info-Title{
+  padding-left: 15%;
+  padding-top: 10%;
+  font-size: 40px
+}
+
+#Card-2-Useful-Info-P{
+  font-size: 25px;
+  padding-left:0%;
+  padding-right: 15%;
+  padding-top: 10%;
+  color: white
+}
+
+.Nav-Bar { 
+  grid-area: Nav-Bar;
+  margin: 10px;
+}
+  
+.Card-1 { 
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    grid-area: Card-1;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ".,."
+    ".,."
+    
+    }
+  
+.Card-2 { 
+    grid-area: Card-2;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 60px;
+ }
+ 
+
+Nav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 15px;
+  background-color: white;
+}
+
+Nav li{
+  margin-left: 6%;
+  font-size: 20px;
+}
+
+#Works-Doubletap{
+  margin-left: 4%;
+  font-size: 30px;
+  color: blue;
+}
+
+#flex-container-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#flex-container-card-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#flex-container-card-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+#button-sign-in{
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 15px;
+  margin-left: 9%;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#button-try-it-free{
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  margin-left: 2%;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black
+}
+
+#works-li-text{
+  color: black;
+}
+
+#Card-2-Picture{
+  width: 50%;
+}
+
+#Card-1-Paragraph{
+  font-size: 33px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
+}
+
+#Card-2-Paragraph{
+  font-size: 33px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
+}

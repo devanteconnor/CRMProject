@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Double Tap Sign-In</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Kristen.css">
 </head>
+
 <body>
+    <div class="container">
+  
+        <div id="sign-up"> 
+            <div id="fix-it">
+            <h3>Don't have an account yet?</h3>
+            <h3>What are you waiting for? Let's fix that now!</h3>
+            
+            <center><button class="btn default">Sign Up</button></center>
+            </div>
+            <br>
+        
+            <img id="rocket" src="../Images/CRM-SignIn/Group 15.png">
+           
+        </div>
+
+        <div id="input-form">
+            <form action="/action_page.php">
+              <br>
+              <br>
+              <h1>Sign In</h1>
+
+              <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" id="in-user" type="text" placeholder="Username" name="usrnm">
+              </div>
+                  <br>
+              <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="Email" name="email">
+              </div>
+                <br>
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="psw">
+              </div>
+              <br>
+                <button type="submit" class="btn" id="btn-sign-in">Sign In</button>
+            </form>
+             
+
+        </div>
+    <br>
+        <div id="social-links">
+         <p>Or sign in with social platforms</p>
+         
+         <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+         <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+         <a href="http://www.google.com" class="fa fa-google"></a>
+         <a href="http://www.linkedin.com" class="fa fa-linkedin"></a>
+        </div>
+    
+    
+    </div>
     
 </body>
 </html>

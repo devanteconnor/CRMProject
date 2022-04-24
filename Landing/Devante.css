@@ -4,23 +4,7 @@
     grid-auto-columns: 1fr;
     gap: 0em 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-    
-
-      "Header Header Header Header Header Header"
-      "Focus-on-Business-Text Focus-on-Business-Text Focus-on-Business-Text Focus-on-Business-Text Focus-on-business-Grid Focus-on-business-Grid"
-      "Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap"
-      "Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease"
-      "Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title"
-      "Top-Left Top-Left Top-Left Top-Right Top-Right Top-Right"
-      "Bottom-Left Bottom-Left Bottom-Left Bottom-Right- Bottom-Right- Bottom-Right-"
-      "Footer Footer Footer Footer Footer Footer";
-    width: 100%;
-  }
-  
-  .Header { grid-area: Header;
-    color: gray;
- }
+}
   
   .Focus-on-Business-Text { grid-area: Focus-on-Business-Text; 
     background-color: gray;}

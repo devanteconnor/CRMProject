@@ -1,40 +1,37 @@
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1.7fr 1.1fr 1.7fr 0.2fr 0.9fr 1.1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0em 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Header Header Header Header Header Header"
-      "Focus-on-Business-Text Focus-on-Business-Text Focus-on-Business-Text Focus-on-Business-Text Focus-on-business-Grid Focus-on-business-Grid"
-      "Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap Start-to-Explore-Double-Tap"
-      "Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease Accept-Payment-With-Ease"
-      "Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title Solutions-To-Fit-your-business-needs-title"
-      "Top-Left Top-Left Top-Left Top-Right Top-Right Top-Right"
-      "Bottom-Left Bottom-Left Bottom-Left Bottom-Right- Bottom-Right- Bottom-Right-"
-      "Footer Footer Footer Footer Footer Footer";
-    width: 100%;
-  }
-  
-  .Header { grid-area: Header; }
-  
-  .Focus-on-Business-Text { grid-area: Focus-on-Business-Text; }
-  
-  .Focus-on-business-Grid { grid-area: Focus-on-business-Grid; }
-  
-  .Start-to-Explore-Double-Tap { grid-area: Start-to-Explore-Double-Tap; }
-  
-  .Accept-Payment-With-Ease { grid-area: Accept-Payment-With-Ease; }
-  
-  .Solutions-To-Fit-your-business-needs-title { grid-area: Solutions-To-Fit-your-business-needs-title; }
-  
-  .Top-Left { grid-area: Top-Left; }
-  
-  .Bottom-Left { grid-area: Bottom-Left; }
-  
-  .Top-Right { grid-area: Top-Right; }
-  
-  .Bottom-Right- { grid-area: Bottom-Right-; }
-  
-  .Footer { grid-area: Footer; }
-  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1.1fr 1.7fr 0.2fr 0.9fr 1.1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0em 0px;
+  grid-auto-flow: row;
+}
+
+.Focus-on-Business-Text { grid-area: Focus-on-Business-Text; 
+  background-color: gray;}
+
+.Focus-on-business-Grid { grid-area: Focus-on-business-Grid; 
+background-color: rgb(179, 50, 50);}
+
+.Start-to-Explore-Double-Tap { grid-area: Start-to-Explore-Double-Tap;
+background-color: rgb(203, 186, 54); }
+
+.Accept-Payment-With-Ease { grid-area: Accept-Payment-With-Ease;
+background-color: rgb(50, 156, 84); }
+
+.Solutions-To-Fit-your-business-needs-title { grid-area: Solutions-To-Fit-your-business-needs-title;
+background-color: rgb(79, 7, 77); }
+
+.Top-Left { grid-area: Top-Left;
+background-color: rgb(203, 162, 40); }
+
+.Bottom-Left { grid-area: Bottom-Left;
+background-color: rgb(38, 147, 168); }
+
+.Top-Right { grid-area: Top-Right;
+background-color: rgb(133, 46, 143); }
+
+.Bottom-Right- { grid-area: Bottom-Right-;
+background-color: rgb(198, 151, 245); }
+
+.Footer { grid-area: Footer;
+background-color: rgb(175, 194, 69); }

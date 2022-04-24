@@ -17,48 +17,50 @@
 
 <body>
     <div class="container">
-        
-        <div id="sign-up">
-            <div id="fix-that">
+  
+        <div id="sign-up"> 
+            <div id="fix-it">
             <h3>Don't have an account yet?</h3>
             <h3>What are you waiting for? Let's fix that now!</h3>
-            </div>
-
+            
             <center><button class="btn default">Sign Up</button></center>
-
+            </div>
             <br>
+        
             <img id="rocket" src="../Images/CRM-SignIn/Group 15.png">
+           
         </div>
 
         <div id="input-form">
             <form action="/action_page.php">
+              <br>
+              <br>
+              <h1>Sign In</h1>
+
+              <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" id="in-user" type="text" placeholder="Username" name="usrnm">
+              </div>
+                  <br>
+              <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="Email" name="email">
+              </div>
                 <br>
-                <br>
-                <h1>Sign In</h1>
-                <div class="input-container">
-                  
-                  <input class="input-field" id="in-user" type="text" placeholder="Username" name="usrnm">
-                </div>
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="psw">
+              </div>
               <br>
-                <div class="input-container">
-                  <i class="fa fa-envelope icon"></i>
-                  <input class="input-field" type="text" placeholder="Email" name="email">
-                </div>
-              <br>
-                <div class="input-container">
-                  <i class="fa fa-key icon"></i>
-                  <input class="input-field" type="password" placeholder="Password" name="psw">
-                </div>
-              <br>
-                <center><button type="submit" class="btn">Sign In</button></center>
-              </form>
+                <button type="submit" class="btn" id="btn-sign-in">Sign In</button>
+            </form>
              
 
         </div>
     <br>
         <div id="social-links">
          <p>Or sign in with social platforms</p>
-         <br>
+         
          <a href="http://www.facebook.com" class="fa fa-facebook"></a>
          <a href="http://www.twitter.com" class="fa fa-twitter"></a>
          <a href="http://www.google.com" class="fa fa-google"></a>
